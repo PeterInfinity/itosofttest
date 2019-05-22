@@ -1,0 +1,25 @@
+server:
+  port: 9091
+spring:
+# Database
+  datasource:
+    url: jdbc:oracle:thin:@200.119.112.226:80/SIGMA
+    username: TEST04
+    password: TEST04
+    driver-class-name: oracle.jdbc.OracleDriver
+    initialization-mode: never
+# JPA properties
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    database: oracle
+    database-platform: org.hibernate.dialect.Oracle10gDialect
+    open-in-view: false
+    generate-ddl: false
+# Logger configuration
+logging:
+  level:
+    org:
+      hibernate:
+        type: trace

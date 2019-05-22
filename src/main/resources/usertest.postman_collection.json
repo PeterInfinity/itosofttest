@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "aa46b303-de5d-4e4c-a782-1873480c7365",
+		"name": "usertest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:9091/users/0",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:9091/users/0",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"users",
+						"0"
+					]
+				},
+				"description": "test service up"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9091/users/2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nombres\":\"pedro\",\n\t\"apellidos\":\"moncada\",\n\t\"identificacion\":\"1032392\",\n\t\"usuario\":\"peter28\",\n\t\"correo\":\"peter@peter.com\",\n\t\"clave\":\"123\",\n\t\"activo\":\"1\"\n}"
+				},
+				"url": {
+					"raw": "localhost:9091/users/2",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"users",
+						"2"
+					]
+				},
+				"description": "create user"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9091/users/1/peter28",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:9091/users/1/peter28",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"users",
+						"1",
+						"peter28"
+					]
+				},
+				"description": "find user by name"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9091/users/3/1",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"usuario\":\"moncada\",\n\t\"correo\":\"moncada0@peter30.com\"\n}"
+				},
+				"url": {
+					"raw": "localhost:9091/users/3/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"users",
+						"3",
+						"1"
+					]
+				},
+				"description": "update user"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9091/users/4/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:9091/users/4/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"users",
+						"4",
+						"1"
+					]
+				},
+				"description": "delete user"
+			},
+			"response": []
+		}
+	]
+}
